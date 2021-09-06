@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:steelblue;
+    color:#fff;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.container{
+    background-color: rgba(0,0,0,0.4);
+    padding:30px;
+    border-radius: 5px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+p {
+    color: rgb(6, 228, 154);
+}
+
+.container a {
+    text-decoration: none;
+    color:steelblue;
+}
+
+.btn{
+    width:100%;
+    padding:10px;
+    border-radius: 5px;
+    border:0;
+    margin: 20px 0;
+    background-color: lightblue;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.btn:focus {
+    outline:0;
+    transform: scale(0.98);
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 30px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px solid #fff;
+    width:100%;
+    display:block;
+    padding: 15px 0;
+    color:#fff;
+    font-size: 16px;
+}
+
+.form-control input:focus, .form-control input:valid{
+    outline:0;
+    border-bottom-color:lightblue;
+} 
+
+.form-control label{
+    position: absolute;
+    top:15px;
+    left:0;
+}
+
+.form-control label span{
+   display:inline-block;
+   transition: transform 0.3s ease-in;
+}
+
+.form-control input:focus + label span, .form-control input:valid + label span{
+
+    transform: translateY(-30px);
+}
+
+
+.quiz-container {
+    background-color:rgba(0,0,0,0.4);
+    border-radius: 10px;
+    box-shadow:  0 0 10px 2px rgb(100, 100, 100,0.1);
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+
+}
+
+.quiz-h {
+    padding: 4rem;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(14, 171, 223);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.3rem;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+button:focus{
+    background-color: rgb(245, 59, 220);
+    outline: none;
+}
